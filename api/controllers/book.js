@@ -16,7 +16,7 @@ module.exports = {
   },
 
   list: async(req, res) => {
-    let books = await Book.findAll({})
+    const books = await Book.findAll({})
     res.json(books)
   },
 
