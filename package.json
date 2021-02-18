@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "postinstall": "cd api && yarn & cd ../client && yarn",
+    "start": "concurrently \"cd api && node app.js\" \"cd client && yarn serve\""
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
