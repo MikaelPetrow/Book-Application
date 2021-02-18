@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "concurrently \"node app.js\" \"cd ../client && yarn serve\""
+    "start": "concurrently \"cd ../client && yarn\" \"yarn\" \"node app.js\" \"cd ../client && yarn serve\""
   },
   "dependencies": {
     "body-parser": "^1.19.0",
